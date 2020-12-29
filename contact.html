@@ -1,0 +1,114 @@
+<!--<?php
+$errors = '';
+$myemail = 'filmfactory.help@gmail.com';
+if(empty($_POST['name'])  || 
+   empty($_POST['email']) || 
+   empty($_POST['message']))
+{
+    $errors .= "\n Error: all fields are required";
+}
+
+$name = $_POST['name']; 
+$email_address = $_POST['email']; 
+$message = $_POST['message']; 
+
+if (!preg_match(
+"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
+$email_address))
+{
+    $errors .= "\n Error: Invalid email address";
+}
+?>-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Film Factory</title>
+        <link rel="stylesheet" type="text/css" href="theatrestyles.css">
+        <link rel="stylesheet" type="text/css" href="contactstyles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" type="text/css"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style type=text/css>
+            html {
+                background:url("images/contactbackground.jpg");
+                font-family: 'Open Sans', sans-serif;
+    --top-spacing:3%;
+            }
+            </style>
+</head>
+    </head>
+    
+        <header>
+            
+            <a class="logo" href="homepage.php"><img src="images/vectortrace.png" alt="logo" height="45px" width="70px"></a>
+            <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="search" placeholder="Search.." name="search">
+                  <button class="searchbar" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="homepage.php">Home</a></li>
+                    <li><a href="movieshowcase.php">Movies</a></li>
+                    <li><a class="current" href="contact.html">Contact Us</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="dropdown">
+                <button class="dropbtn">My Account <i class="arrow down"></i></i></button>
+                <div class="dropdown-content">
+                  <a href="signout.php">Sign Out</a>
+                </div>
+                </div>
+            <a class="cta" href="index.php"><button>Login</button></a>
+    
+        </header>
+        <body>
+            <section>
+        <div class="container">
+            <div class="contactinput">
+                <h2>Contact Info</h2><hr>
+                <ul class="info">
+                    <li>
+                        <span><img src="images/vectortrace.png"></span>
+                        <span>Connect With Us:<br>
+                        We would love to help with your needs
+                    </span><br>
+                    </li>
+                    <li>
+                        <span><img src="images/vectortrace.png"></span>
+                        <span>filmfactory.help@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+            <form>
+            <div class="contactform">
+                <h2>Send a Message</h2><hr>
+                <div class="formBox">
+                    <div class="inputBox w50">
+                        <span>First Name</span>
+                        <input type="text" name="" placeholder="First Name" required>
+                    </div>
+                    <div class="inputBox w50">
+                        <span>Last Name</span>
+                        <input type="text" name="" placeholder="Last Name" required>
+                    </div>
+                    <div class="inputBox w50">
+                        <span>Email Address</span>
+                        <input type="text" name="" placeholder="E-mail" required>
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea class="writemsg" name="" placeholder="Any Questions?" required></textarea><hr>
+                        <input class="submitmsg" type="submit" value="Send">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    </section>
+    </body>
+</html>

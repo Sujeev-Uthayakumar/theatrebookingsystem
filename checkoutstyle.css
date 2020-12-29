@@ -1,0 +1,58 @@
+body{
+
+    font-family: arial;
+}
+.checkoutpagetable
+{
+    margin: 40px auto;
+}
+
+table
+{
+    width: 90%;
+    border-collapse: collapse;
+}
+
+.cart-info{
+    margin-top:40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th {
+
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #24252A;
+    font-weight: normal;
+}
+
+td 
+{
+    padding: 10px 5px;
+}
+
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+#checkoutsumm{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#checkoutsumm table{
+    border-top: 3px solid #24252A;
+    width: 90%;
+    max-width: 640px;
+}
+
+td last-child {
+    text-align: right;
+}
+th last-child {
+    text-align: right
+}

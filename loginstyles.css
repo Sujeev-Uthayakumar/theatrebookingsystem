@@ -1,0 +1,100 @@
+html{
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    overflow: visible;
+    background:no-repeat;
+}
+body{
+    scroll-padding-top: var(--top-spacing);
+    margin: var(--top-spacing) auto;
+    background-position:center;
+    margin-top:10%;
+}
+span {
+    content: "\2713";
+    color:#fff;
+  }
+.accountbenefits{
+    padding:70px 30px;
+    height:420px;
+    width:400px;
+    margin-top:80px;
+    float:right;
+    display:inline-block;
+    background:#24252A;
+    color:#fff;
+    box-sizing:border-box;
+    border-radius:50px;
+}
+.accountbenefits p{
+    margin:5px;
+    padding:0;
+    font-weight:bold;
+}
+.accountbenefits h1{
+    margin-bottom: 0px;
+    padding:0 0 20px;
+    text-align:center;
+}
+hr{
+    margin:25px;
+}
+.loginarea{
+    padding:70px 30px;
+    width:420px;
+    height:550px;
+    background:#24252A;
+    color:#fff;
+    box-sizing:border-box;
+    float: right;
+    display: inline-block;
+    margin:15px;
+    border-color:black;
+    border-radius:50px;
+}
+h1{
+    margin-bottom: 25px;
+    padding:0 0 20px;
+    text-align:center;
+    color:rgba(0,136,169,1);
+}
+.loginarea p{
+    margin:0;
+    padding:0;
+    font-weight:bold;
+}
+
+.logininput{
+    background-color:white;
+    padding: 9px 25px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+    width:100%;
+    margin-bottom:20px;
+    
+}
+.loginsubmit{
+    padding: 9px 25px;
+    background-color:rgba(0,136,169,1);
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+    color:white;
+    align-items: auto;
+    margin-bottom:10px;
+}
+.loginarea a{
+    text-decoration:none;
+    font-size:12px;
+    line-height:20px;
+    color:white;
+}
+.loginarea a:hover{
+    color:rgba(0,136,169,1);
+}
+.loginlogo{
+    margin-left:auto;
+}
